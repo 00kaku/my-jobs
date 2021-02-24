@@ -1,0 +1,20 @@
+.login__create a {
+	text-decoration: none;
+	color: #43afff;
+}
+
+.login__forget {
+	width: 100%;
+	display: flex;
+	margin-bottom: 0;
+	height: 20px;
+	align-items: center;
+}
+
+.login__forget span a {
+	color: #43afff;
+	text-decoration: none;
+	text-align: right;
+	margin-left: auto;
+	display: block;
+}

@@ -1,13 +1,224 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+	margin: 0;
+
+	box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+	font-family: "helvetica-neue";
+}
+
+body {
+	background: transparent linear-gradient(248deg, #303f60 0%, #1a253c 100%) 0%
+		0% no-repeat padding-box;
+	background-size: 100% 200px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	color: #303f60;
+	word-break: break-all;
+}
+
+h1,
+h2,
+h3 {
+	font-family: "helvetica-neue-medium";
+	font-size: 22px;
+}
+
+p {
+	font-family: "helvetica-neue-medium";
+	font-size: 16px;
+}
+@font-face {
+	font-family: "helvetica-neue-regular";
+	src: url("./fonts/HelveticaNeue.ttf");
+}
+
+@font-face {
+	font-family: "helvetica-neue-medium";
+	src: url("./fonts/HelveticaNeue Medium.ttf");
+}
+
+@font-face {
+	font-family: "helvetica-neue-bold";
+	src: url("./fonts/Helvetica Neu Bold.ttf");
+}
+
+button {
+	cursor: pointer;
+}
+
+/*########## GLOBAL FORM STYLES ###########################*/
+.form__box {
+	width: 50%;
+	min-height: 450px;
+	background-color: yellow;
+	position: absolute;
+	top: 20%;
+	left: 25%;
+	background: #ffffff 0% 0% no-repeat padding-box;
+	box-shadow: 0px 30px 36px #557da526;
+	border-radius: 20px;
+	padding: 30px;
+	max-height: 75%;
+	overflow-y: scroll;
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+	border-bottom: 1px solid lightgray;
+}
+
+.form__box::-webkit-scrollbar {
+	display: none;
+}
+
+form {
+	margin-top: 20px;
+	width: 100%;
+}
+
+form * {
+	width: 100%;
+	height: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1%;
+	margin-bottom: 4%;
+	font-family: "helvetica-neue-medium";
+	font-size: 14px;
+}
+
+form input {
+	border: 1px solid #c6c6c6;
+	border-radius: 5px;
+	background: #e8e8e833;
+	padding: 5px;
+	color: #303f60;
+}
+
+form input:hover {
+	border: 1px solid #43afff;
+}
+
+form button {
+	width: 20%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	background: #43afff;
+	border: 1px solid #43afff;
+	border-radius: 5px;
+	color: white;
+	font-size: large;
+	font-weight: bold;
+}
+
+.form__box h4 {
+	display: block;
+	color: #303f60;
+	margin-top: 30px;
+	text-align: center;
+}
+
+.form_error {
+	color: red;
+	margin: 0px;
+	text-align: right;
+	font-size: 12px;
+}
+
+.form_warning {
+	color: #303f60;
+	margin: 0px;
+	text-align: right;
+	font-size: 12px;
+}
+
+@media only screen and (max-width: 480px) {
+	.form__box {
+		width: 90%;
+		left: 5%;
+		top: 15%;
+		max-height: 80%;
+		overflow-y: scroll;
+	}
+
+	body {
+		margin-right: 0;
+	}
+}
+
+@media only screen and (max-width: 860px) {
+	form button {
+		width: 50%;
+	}
+	.navbar__avatar .tooltiptext {
+		display: none;
+	}
+}
+
+/*################ GLOBAL RIGHT NAVBAR STYLES #############33*/
+.navbar__button {
+	height: 70px;
+	display: flex;
+	padding: 0;
+
+	align-items: center;
+}
+
+.navbar__button button {
+	border: none;
+	background: none;
+	color: white;
+	height: 70px;
+	font-family: "helvetica-neue-bold";
+	font-size: 22px;
+	padding-bottom: 22px;
+	padding-top: 22px;
+	margin-right: 20px;
+}
+
+.navbar__button button:hover {
+	border-bottom: 5px solid #43afff;
+}
+
+.navbar__avatar {
+	border: 1px solid black;
+	height: 50px;
+	border-radius: 50%;
+	background-color: #d9efff;
+	width: 50px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.navbar__avatar span {
+	font-size: 40px;
+	color: #303f60;
+	font-family: "helvetica-neue-medium";
+}
+
+.navbar__avatar .tooltiptext {
+	font-size: 20px;
+	background-color: #fff;
+	color: #303f60;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px;
+	margin-top: 30px;
+	visibility: hidden;
+	position: absolute;
+	z-index: 1;
+}
+
+@media only screen and (min-width: 900px) {
+	.navbar__avatar:hover .tooltiptext {
+		visibility: visible;
+	}
 }

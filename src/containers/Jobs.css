@@ -1,0 +1,163 @@
+.jobs__header {
+	width: 75%;
+	margin-left: 12.5%;
+	margin-bottom: 30px;
+	margin-top: 10px;
+}
+
+.jobs__header h2 {
+	color: white;
+	margin-top: 30px;
+	font-family: "helvetica-neue-medium";
+	font-size: 22px;
+}
+
+.jobs__header h4 {
+	color: white;
+	font-size: 12px;
+}
+
+.jobs__box {
+	display: grid;
+	width: 75%;
+	margin-left: 12.5%;
+	grid-template-columns: repeat(4, 1fr);
+	grid-row-gap: 15px;
+}
+
+.jobs__box button {
+	border: none;
+	padding-top: 12%;
+	background: none;
+	font-family: "helvetica-neue-medium";
+	font-size: 12px;
+}
+
+.rec_noJob {
+	width: 300%;
+
+	height: 500px;
+	margin-top: 50px;
+}
+
+.rec_noJob span {
+	margin-left: auto;
+	margin-left: 50%;
+	margin-top: 10%;
+	font-size: 250px;
+	color: lightgray;
+}
+
+.rec_noJob p {
+	color: lightgray;
+	text-align: center;
+	font-family: "helvetica-neue-medium";
+	font-size: 40px;
+}
+
+.rec_noJob button {
+	padding: 0;
+	border: 1px solid #43afff;
+	background: #43afff;
+	border-radius: 5px;
+	color: white;
+	height: 46px;
+	width: 148px;
+	font-family: "helvetica-neue-bold";
+	font-size: 16px;
+	margin-top: 5px;
+	margin-left: 55%;
+}
+
+.Pagination {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 50%;
+	margin-left: 25%;
+	margin-top: 20px;
+}
+
+.Pagination p {
+	background: #43afff33;
+	border: 1px solid #43afff33;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	font-size: 35px;
+	color: #303f60;
+	margin: 0;
+}
+
+.Pagination span {
+	border: 1px solid lightgray;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	font-size: 35px;
+	color: #303f60;
+}
+
+.Pagination span:hover {
+	background: #303f60;
+	color: white;
+}
+
+@media only screen and (max-width: 480px) {
+	.Posts {
+		width: 100%;
+		margin: 0;
+	}
+	.jobs__box {
+		width: 95%;
+		margin-left: 2.5%;
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.jobs__header {
+		width: 95%;
+		margin-left: 2.5%;
+	}
+	.jobs__box button {
+		padding-top: 12%;
+	}
+
+	.rec_noJob {
+		width: 100%;
+	}
+
+	.rec_noJob span {
+		margin-left: calc(50% - 64px);
+		margin-top: 10%;
+		font-size: 125px;
+	}
+
+	.rec_noJob button {
+		margin-left: 30%;
+		padding: 0;
+	}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 860px) {
+	.jobs__box {
+		width: 90%;
+		margin-left: 5%;
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.jobs__header {
+		width: 90%;
+		margin-left: 5%;
+	}
+
+	.Pagination {
+		width: 80%;
+		margin-left: 10%;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.Pagination {
+		width: 90%;
+		margin-left: 5%;
+	}
+}

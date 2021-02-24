@@ -1,0 +1,13 @@
+.banner {
+	height: 500px;
+	background: transparent linear-gradient(248deg, #303f60 0%, #1a253c 100%) 0%
+		0% no-repeat padding-box;
+	background-size: 100% 90%;
+}
+
+@media only screen and (max-width: 860px) {
+	.banner {
+		height: 400px;
+		background-size: 100% 97%;
+	}
+}
